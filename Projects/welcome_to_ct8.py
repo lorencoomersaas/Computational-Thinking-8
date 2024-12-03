@@ -6,9 +6,9 @@ stage = StageClass()
 ###############################################
 
 
-stage.set_background("fall")
+stage.set_background("castle")
 mySprite = codesters.Sprite("cardinal")
-mySprite.say("I am the great cardinal of Seattle!)
+mySprite.say("I am the great cardinal of Seattle!")
 
 
 print("Welcome to CT8!")
