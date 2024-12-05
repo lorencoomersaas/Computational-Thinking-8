@@ -78,7 +78,7 @@ int main() {
         A += 0.04;  // Update angle A for rotation
         B += 0.02;  // Update angle B for rotation
 
-        usleep(50000);  // Control the speed of animation (in microseconds)
+        usleep(25000);  // Control the speed of animation (in microseconds)
     }
 
     return 0;
