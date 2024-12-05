@@ -37,14 +37,14 @@ int main() {
                 z = cos_B * cos(phi) + sin_B * sin_A * sin(phi);
 
                 ooz = 1.0 / z;  // Inverse of z (for perspective)
-                px = (int)(WIDTH / 2 + WIDTH / 4 * x * ooz);
-                py = (int)(HEIGHT / 2 - HEIGHT / 4 * y * ooz);
+                int px_int = (int)(WIDTH / 2 + WIDTH / 4 * x * ooz);
+                int py_int = (int)(HEIGHT / 2 - HEIGHT / 4 * y * ooz);
 
                 // Determine the character to print based on the "distance"
                 k = (int)(8 * ooz);  // Scale the distance to character index
-                if (py >= 0 && py < HEIGHT && px >= 0 && px < WIDTH && ooz > 0) {
-                    if (buffer[py * WIDTH + px] == ' ') {
-                        buffer[py * WIDTH + px] = donut[k % 10];  // Use donut shape characters
+                if (py >= 0 && py_int < HEIGHT && px_int >= 0 && px_int < WIDTH && ooz > 0) {
+                    if (buffer[py_int * WIDTH + px_int] == ' ') {
+                        buffer[py_int * WIDTH + px_int] = donut[k % 10];  // Use donut shape characters
                     }
                 }
             }
