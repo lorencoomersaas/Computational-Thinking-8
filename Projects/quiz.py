@@ -8,33 +8,45 @@ if answer == "A":
     unixpts += 1
 elif answer == "B":
     humanpts += 1
+else:
+    print("not valid option")
 
 answer = input("would you rather A) touch grass or B) hiss at the sun")
 if answer == "B":
     unixpts += 1
 elif answer == "A":
     humanpts += 1
+else:
+    print("not valid option")
 
 answer = input("would you rather A) help a grandma cross the street or B) cross yourself you need this new gaming chair")
 if answer == "B":
     unixpts += 1
 elif answer == "A":
     humanpts += 1
+else:
+    print("not valid option")
 
 answer = input("would you rather A) eat Sid Mignone or B) eat a bagel")
 if answer == "B":
     unixpts += 1
 elif answer == "A":
     humanpts += 1
+else:
+    print("not valid option")
 
 answer = input("would you rather A) yell at Sid Mignone or B) yell at Jack Nowka")
 if answer == "B":
     unixpts += 1
 elif answer == "A":
     humanpts += 1
+else:
+    print("not valid option")
 
 #end results
 if unixpts > humanpts:
     print("you prob play too much video games")
 elif humanpts > unixpts:
     print("you are a goodie good")
+else:
+    ptint("bro ion even know")
