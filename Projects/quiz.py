@@ -1,6 +1,8 @@
+#beginning
+#variables
 unixpts = 0
 humanpts = 0
-
+#questions
 answer = input("would you rather A) stay inside and code or B) go outside and do something")
 if answer == "A":
     unixpts += 1
@@ -31,6 +33,7 @@ if answer == "B":
 elif answer == "A":
     humanpts += 1
 
+#end results
 if unixpts > humanpts:
     print("you prob play too much video games")
 elif humanpts > unixpts:
