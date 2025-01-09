@@ -2,3 +2,5 @@
 
 .vscode/*
 !.vscode/settings.json
+
+/workspaces/Computational-Thinking-8/ASCII-Donut-Animation/*
