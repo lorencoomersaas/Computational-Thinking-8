@@ -3,7 +3,7 @@ import turtle as t
 import random as r
 
 # setting speed to 10
-t.speed(10)
+t.speed(0)
 
 # setting bg
 t.Screen().bgcolor('#EBD3F8')
