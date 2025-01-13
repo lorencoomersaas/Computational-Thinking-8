@@ -11,9 +11,8 @@ t.Screen().bgcolor('#EBD3F8')
 # colors = ['red', 'blue', 'purple']
 colors = ['#AD49E1', '#7A1CAC', '#2E073F']
 # angles = [0, 72, 144, 216, 288]
-angles = [0, 60, 120, 180, 240, 300]
 # angles = [0, 60, 120, 180, 240, 300]
-# angles = [0, 45, 90, 135, 180, 225, 270, 315]
+angles = [0, 90, 180, 270]
 
 # for loop
 for i in range(99999999999999999):
