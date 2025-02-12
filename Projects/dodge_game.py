@@ -37,4 +37,5 @@ def collision(ship, ball):
 # for i in range(10):
 #     ballfall()
 #     time.sleep(1)
+
 stage.event_interval(ballfall,3)
