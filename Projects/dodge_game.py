@@ -23,6 +23,7 @@ ship.event_key('d', right)
 
 # defining functions and ball setup
 def ballfall():
+
     global object_speed
 
     if game_over == False:
@@ -31,11 +32,23 @@ def ballfall():
         ball.set_position(random.randint(-215, 215), 250)
         ball.set_y_speed(random.randint(2,3) * -1)
 
+# collision
+lives = 5
 def collision(ship, ball):
-    pass
 
-# for i in range(10):
-#     ballfall()
-#     time.sleep(1)
+    if object.get_image_name() == "ball":
+        stage.remove_sprite(ball)
+        lives -= 1
 
-stage.event_interval(ballfall,3)
+        if lives <= 0:
+            ship.say(f"you died", 5)
+        else:
+            ship.say(f"{lives} lives", 0.5)
+
+ship.event_collision(collision)
+
+
+while run:
+    stage.event_interval(ballfall,3)
+    if lives == 0:
+        game_over = True
